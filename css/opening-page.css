@@ -1,0 +1,488 @@
+@font-face {
+  font-family: 'Chap';
+  src: url('fonts/Chap-Regular.eot');
+  src: url('fonts/Chap-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Chap-Regular.woff2') format('woff2'),
+    url('fonts/Chap-Regular.woff') format('woff'),
+    url('fonts/Chap-Regular.ttf') format('truetype'),
+    url('fonts/Chap-Regular.otf') format('opentype'),
+    url('fonts/Chap-Regular.svg#Chap-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes logoTransition {
+  0% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-39vh);
+    -webkit-transform: translateY(-39vh);
+  }
+}
+@keyframes welcomeTransition {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.4;
+}
+a {
+  color: #1c3b51;
+  text-decoration: none;
+}
+p {
+  color: #1c3b51;
+  font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  background-color: rgb(209, 203, 188);
+  width: 100%;
+  align-self: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+.sub-title {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+}
+.sub-title p {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.sub-title .lang {
+  font-family: 'Chap', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  color: #1c3b51;
+}
+.title {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.title p {
+  font-size: 29px;
+}
+.title h1 {
+  font-size: 33px;
+}
+.title-transition {
+  animation: logoTransition 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.tp-transition {
+  animation: welcomeTransition 5s;
+  animation-fill-mode: forwards;
+}
+.insta-link {
+  background-image: url('../assets/insta.png');
+  display: block;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  position: fixed;
+  top: 10.4vh;
+  right: 180px;
+  z-index: 1;
+}
+.info-link {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+  display: block;
+  padding-top: 18px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10.4vh;
+  right: 105px;
+  z-index: 1;
+}
+.new-image {
+  position: absolute;
+  left: -20%;
+  top: 50%;
+  transform: translateX(-150%) translateY(-50%);
+  background-color: rgb(209, 203, 188);
+  width: 89vw;
+  align-self: auto;
+  height: 100vh;
+  background-image: url('../assets/menu-bg.jpg');
+  background-position: right;
+  background-size: cover;
+  overflow: hidden;
+}
+#english-checkbox {
+  display: none;
+}
+.yo:checked ~ .new-image {
+  transform: translateY(-50%) translateX(-48%);
+  transition-duration: 2s;
+}
+#russian-checkbox {
+  display: none;
+}
+/* -----------------------Burger Animation---------------------- */
+.hamburger-container {
+  position: fixed;
+  top: 10vh;
+  left: 100px;
+  z-index: 1;
+}
+.hamburger-container .hamburger-checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+.hamburger-container .hamburger-checkbox:checked + .hamburger > div {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.hamburger-container .hamburger-checkbox:checked + .hamburger > div:before,
+.hamburger-container .hamburger-checkbox:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.hamburger-container .hamburger-checkbox:checked + .hamburger > div:after {
+  opacity: 0;
+}
+.hamburger-container .hamburger-checkbox:checked {
+  pointer-events: auto;
+  visibility: visible;
+}
+.hamburger-container .hamburger-checkbox:checked {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition-duration: 0.75s;
+  -webkit-transition-duration: 0.75s;
+}
+.hamburger-container .hamburger-checkbox:checked > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+  -webkit-transition: opacity 0.4s ease 0.4s;
+}
+.hamburger-container .hamburger-checkbox:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+}
+.hamburger-container .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 0.5em 1em;
+  border-radius: 0 0.12em 0.12em 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: box-shadow 0.4s ease;
+  -webkit-transition: box-shadow 0.4s ease;
+}
+.hamburger-container .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #1c3b51;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+.hamburger-container .hamburger > div:before,
+.hamburger-container .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+.hamburger-container .hamburger > div:after {
+  top: 10px;
+}
+/* -----------------------Menu Animation---------------------- */
+.menu ul {
+  transform: translateX(-500px);
+  list-style: none;
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  padding-top: 16px;
+  margin-left: 75px;
+}
+.menu .main-li {
+  padding-bottom: 14px;
+}
+.menu .main-sub-li {
+  padding-top: 14px;
+}
+.menu .main-postsub-li {
+  padding: 14px 0;
+}
+.menu .inner-li {
+  margin-left: 28px;
+  padding-top: 0;
+}
+
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(1) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: -200ms;
+  animation-delay: -200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(2) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: -100ms;
+  animation-delay: -100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(3) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(4) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(5) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(6) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(7) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(8) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(9) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(10) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(11) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.hamburger-checkbox:checked ~ .menu > ul > li:nth-child(12) {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+@-webkit-keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(500px);
+    transform: translateX(500px);
+  }
+}
