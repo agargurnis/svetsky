@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Chap';
+  src: url('fonts/Chap-Regular.eot');
+  src: url('fonts/Chap-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Chap-Regular.woff2') format('woff2'),
+    url('fonts/Chap-Regular.woff') format('woff'),
+    url('fonts/Chap-Regular.ttf') format('truetype'),
+    url('fonts/Chap-Regular.otf') format('opentype'),
+    url('fonts/Chap-Regular.svg#Chap-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.4;
+}
+a {
+  color: #1c3b51;
+  text-decoration: none;
+}
+p {
+  color: #1c3b51;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+}
+h1 {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+}
+.container {
+  background-color: rgb(209, 203, 188);
+  width: 100%;
+  align-self: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+.title {
+  margin: 0;
+  position: absolute;
+  top: 13.45vh;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+.title p {
+  font-size: 29px;
+}
+.title h1 {
+  font-size: 33px;
+}
+.insta-link {
+  background-image: url('../assets/insta.png');
+  display: block;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  position: fixed;
+  top: 10.4vh;
+  right: 180px;
+  z-index: 1;
+}
+.info-link {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+  display: block;
+  padding-top: 18px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10.4vh;
+  right: 105px;
+  z-index: 1;
+}
+.description {
+  background-color: rgba(225, 222, 216, 0.9);
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 50vh;
+  padding: 2%;
+}
+.pl {
+  padding-left: 10%;
+}
+.construction-image {
+  background-image: url('../assets/construction.jpg');
+  background-size: cover;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  height: 80vh;
+  width: 70vw;
+}

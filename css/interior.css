@@ -75,6 +75,13 @@ h1 {
   font-weight: normal;
   font-style: normal;
 }
+.preload-images {
+  /* background: url(image-01.png) no-repeat -9999px -9999px; */
+  background: url('../assets/interior1.jpg') no-repeat -9999px -9999px,
+    url('../assets/interior2.jpg') no-repeat -9999px -9999px,
+    url('../assets/interior3.jpg') no-repeat -9999px -9999px,
+    url('../assets/interior4.jpg') no-repeat -9999px -9999px;
+}
 .container {
   background-color: rgb(209, 203, 188);
   width: 100%;
@@ -130,7 +137,7 @@ h1 {
   top: 20%;
   right: 5%;
   width: 50vh;
-  padding: 3%;
+  padding: 2%;
 }
 .interior-image {
   position: absolute;
