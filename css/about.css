@@ -10,6 +10,40 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -94,6 +128,7 @@ h1 {
   height: 80vh;
   width: 70vw;
   display: flex;
+  animation: fadeIn 1.5s ease-in-out;
 }
 .left-container {
   width: 66%;

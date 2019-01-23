@@ -10,6 +10,40 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -82,9 +116,9 @@ h1 {
   right: 105px;
   z-index: 1;
 }
-/* .other-container {
-  
-} */
+.other-container {
+  animation: fadeIn 2s ease-in-out;
+}
 .column-container {
   display: flex;
   margin: 0 auto;

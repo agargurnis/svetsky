@@ -10,6 +10,40 @@
   font-weight: normal;
   font-style: normal;
 }
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes carousel {
   0% {
     opacity: 1;
@@ -76,7 +110,6 @@ h1 {
   font-style: normal;
 }
 .preload-images {
-  /* background: url(image-01.png) no-repeat -9999px -9999px; */
   background: url('../assets/interior1.jpg') no-repeat -9999px -9999px,
     url('../assets/interior2.jpg') no-repeat -9999px -9999px,
     url('../assets/interior3.jpg') no-repeat -9999px -9999px,
@@ -147,4 +180,7 @@ h1 {
   height: 82.5vh;
   background-size: cover;
   animation: carousel 40s infinite;
+}
+.interior-container {
+  animation: fadeIn 1.5s ease-in-out;
 }
