@@ -176,8 +176,8 @@
   animation-name: slideInMenu;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -188,8 +188,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: -200ms;
   animation-delay: -200ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -200,8 +200,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: -100ms;
   animation-delay: -100ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -212,8 +212,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 0ms;
   animation-delay: 0ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -224,8 +224,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -236,8 +236,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 200ms;
   animation-delay: 200ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -248,8 +248,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 300ms;
   animation-delay: 300ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -260,8 +260,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 400ms;
   animation-delay: 400ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -272,8 +272,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 500ms;
   animation-delay: 500ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -284,8 +284,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 600ms;
   animation-delay: 600ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -296,8 +296,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 700ms;
   animation-delay: 700ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -308,8 +308,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 800ms;
   animation-delay: 800ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
@@ -320,8 +320,8 @@
   animation-duration: 1s;
   -webkit-animation-delay: 900ms;
   animation-delay: 900ms;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }

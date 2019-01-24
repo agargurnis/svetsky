@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>SVETSKY</title>
-    <link href="css/construction.css" type="text/css" rel="stylesheet" />
+    <link href="css/contact.css" type="text/css" rel="stylesheet" />
     <link href="css/burger.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
@@ -51,30 +51,41 @@
           >Instagram Logo</a
         >
         <a class="info-link" href="contact.html">info.</a>
-        <div class="title"><h1>CONSTRUCTION AND MAINTENANCE</h1></div>
+        <div class="title"><h1>get in touch</h1></div>
       </div>
-      <div class="construction-container">
-        <div class="construction-image"></div>
-        <div class="description">
-          <p>
-            From minor maintenance and repairs to fully managed construction
-            projects, here are some of the things we’re able to offer:
-          </p>
-          <br />
-          <p class="pl">Refurbishments</p>
-          <p class="pl">Painting and decorating</p>
-          <p class="pl">Planned maintenance services</p>
-          <p class="pl">Joinery works</p>
-          <p class="pl">Flooring works</p>
-          <p class="pl">Electrical works</p>
-          <p class="pl">Kitchen and bathroom replacements</p>
-          <br />
-          <br />
-          <p>
-            The list of services we are able to offer is by no means exhaustive.
-            If you have a project in mind but don’t know where to start, get in
-            touch and we’ll see how we can work together.
-          </p>
+      <div class="contact-container">
+        <div class="contact-form">
+          <form action="//formspree.io/arcijs95@gmail.com" method="POST">
+            <div class="email-info">
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/contact.html"
+              />
+              <label
+                >full name<input class="text-field" type="text" name="name"
+              /></label>
+              <label
+                >email address<input
+                  class="text-field"
+                  type="email"
+                  name="_replyto"
+              /></label>
+              <label
+                >subject<input class="text-field" type="text" name="_subject"
+              /></label>
+              <label>message<textarea name="message"></textarea></label>
+              <input class="send" type="submit" value="send" />
+            </div>
+          </form>
+          <p class="address">our address</p>
+          <p class="line"></p>
+          <p class="name">SVETSKY LIMITED</p>
+          <p class="address-lines">First Floor Office,</p>
+          <p class="address-lines">6 Porter Street Marylebone,</p>
+          <p class="address-bottom-line">London, W1U 6DD</p>
+          <p class="line"></p>
+          <p class="reg-number">Registered Company Number 10797015</p>
         </div>
       </div>
     </div>
