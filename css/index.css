@@ -116,6 +116,7 @@
 }
 body {
   line-height: 1.4;
+  background-color: rgb(209, 203, 188);
 }
 a {
   color: #1c3b51;
@@ -132,7 +133,6 @@ h1 {
   font-style: normal;
 }
 .container {
-  background-color: rgb(209, 203, 188);
   width: 100%;
   align-self: auto;
   height: 100vh;
@@ -238,3 +238,59 @@ h1 {
 #eng {
   cursor: pointer;
 }
+/* @media only screen and (max-width: 414px) {
+  .title {
+    top: 32px;
+    position: fixed;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    background-color: rgb(209, 203, 188);
+  }
+  .title-transition {
+    animation: none;
+  }
+  .tp-transition {
+    display: none;
+  }
+  .sub-title {
+    display: none;
+  }
+  .sub-title-mobile {
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .please {
+    font-size: 23px;
+    padding: 50px 0 25px 0;
+  }
+  .or {
+    padding: 25px 0 25px 0;
+    font-size: 23px;
+  }
+  .sub-title-mobile a {
+    font-size: 30px;
+    font-family: 'Chap', Arial, sans-serif;
+    color: #1c3b51;
+    font-weight: normal;
+    font-style: normal;
+    cursor: pointer;
+  }
+  .insta-link {
+    height: 35px;
+    width: 35px;
+    top: 25px;
+    right: 10px;
+    display: none;
+  }
+  .info-link {
+    display: none;
+  }
+  p {
+    font-size: 18px;
+  }
+} */

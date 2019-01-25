@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'Chap';
+  src: url('fonts/Chap-Regular.eot');
+  src: url('fonts/Chap-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Chap-Regular.woff2') format('woff2'),
+    url('fonts/Chap-Regular.woff') format('woff'),
+    url('fonts/Chap-Regular.ttf') format('truetype'),
+    url('fonts/Chap-Regular.otf') format('opentype'),
+    url('fonts/Chap-Regular.svg#Chap-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+  position: absolute;
+  top: 10.45vh;
+  /* left: 50%; */
+  height: 65px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  /* transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); */
+}
+/* .title p {
+  font-size: 29px;
+} */
+.title h1 {
+  font-size: 33px;
+}
+.insta-link {
+  background-image: url('../assets/insta.png');
+  display: block;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  position: fixed;
+  top: 10.4vh;
+  right: 180px;
+  z-index: 2;
+}
+.info-link {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+  display: block;
+  padding-top: 18px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10.4vh;
+  right: 105px;
+  z-index: 2;
+}
+@media only screen and (max-width: 1024px) {
+  .title {
+    position: fixed;
+    top: 0;
+    height: 85px;
+    background-color: rgb(209, 203, 188);
+  }
+  .title h1 {
+    transform: translate(0, 12.5px);
+    -webkit-transform: translate(0, 12.5px);
+  }
+  .insta-link {
+    height: 50px;
+    width: 50px;
+    top: 25px;
+    right: 25px;
+  }
+  .info-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 896px) {
+}
+
+/* @media only screen and (min-width: 320px) {
+  .title {
+    position: fixed;
+    padding-top: 35px;
+    padding-bottom: 10px;
+    background-color: rgb(209, 203, 188);
+  }
+  .insta-link {
+    height: 35px;
+    width: 35px;
+    top: 25px;
+    right: 10px;
+  }
+  .info-link {
+    display: none;
+  }
+} */

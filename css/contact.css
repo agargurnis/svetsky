@@ -80,47 +80,6 @@ button:focus {
   height: 100vh;
   overflow: hidden;
 }
-.title {
-  position: absolute;
-  top: 13.45vh;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.title p {
-  font-size: 29px;
-}
-.title h1 {
-  font-size: 33px;
-}
-.insta-link {
-  background-image: url('../assets/insta.png');
-  display: block;
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  text-indent: -9999px;
-  position: fixed;
-  top: 10.4vh;
-  right: 180px;
-  z-index: 1;
-}
-.info-link {
-  font-family: 'Chap', Arial, sans-serif;
-  color: #1c3b51;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 26px;
-  display: block;
-  padding-top: 18px;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  top: 10.4vh;
-  right: 105px;
-  z-index: 1;
-}
 .contact-container {
   animation: fadeIn 1s ease-in-out;
 }
@@ -220,3 +179,22 @@ button:focus {
   text-align: center;
   padding-top: 7.5%;
 }
+/* @media only screen and (min-width: 320px) {
+  p {
+    font-size: 18px;
+  }
+  .title {
+    padding-top: 27px;
+  }
+  .title h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .title {
+    padding-top: 28px;
+  }
+  .title h1 {
+    font-size: 27px;
+  }
+} */

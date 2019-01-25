@@ -51,7 +51,7 @@
   position: fixed;
   top: 10vh;
   left: 100px;
-  z-index: 1;
+  z-index: 2;
 }
 .hamburger-container .hamburger-checkbox {
   position: absolute;
@@ -161,7 +161,7 @@
 .menu .main-li {
   padding-bottom: 14px;
 }
-.menu .main-sub-li {
+.menu .second-sub-li {
   padding-top: 14px;
 }
 .menu .main-postsub-li {
@@ -324,4 +324,40 @@
   animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hamburger-container {
+    top: 25px;
+    left: 25px;
+  }
+  .menu {
+    background-color: rgba(225, 222, 216, 1);
+    width: 35vw;
+  }
+  .menu ul {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hamburger-container {
+    top: 25px;
+    left: 25px;
+  }
+  .menu {
+    background-color: rgba(225, 222, 216, 1);
+    width: 45vw;
+  }
+  .menu ul {
+    margin-left: 60px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
 }

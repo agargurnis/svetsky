@@ -51,6 +51,7 @@
 }
 body {
   line-height: 1.4;
+  background-color: rgb(209, 203, 188);
 }
 a {
   color: #1c3b51;
@@ -68,56 +69,13 @@ h1 {
   font-style: normal;
 }
 .container {
-  background-color: rgb(209, 203, 188);
   width: 100%;
   align-self: auto;
   height: 100vh;
   overflow: hidden;
 }
-.title {
-  margin: 0;
-  position: absolute;
-  top: 13.45vh;
-  left: 50%;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-.title p {
-  font-size: 29px;
-}
-.title h1 {
-  font-size: 33px;
-}
-.insta-link {
-  background-image: url('../assets/insta.png');
-  display: block;
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  text-indent: -9999px;
-  position: fixed;
-  top: 10.4vh;
-  right: 180px;
-  z-index: 1;
-}
-.info-link {
-  font-family: 'Chap', Arial, sans-serif;
-  color: #1c3b51;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 26px;
-  display: block;
-  padding-top: 18px;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  top: 10.4vh;
-  right: 105px;
-  z-index: 1;
-}
 .other-container {
-  animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 1.5s ease-in-out;
 }
 .column-container {
   display: flex;
@@ -187,3 +145,80 @@ h1 {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+@media only screen and (min-width: 320px) {
+  .column-container {
+    display: block;
+    top: 120px;
+  }
+  .column {
+    width: 80%;
+    height: 460px;
+  }
+  .top {
+    padding-top: 20px;
+  }
+  .column-info {
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+  .mid {
+    padding-top: 40px;
+  }
+  .bot {
+    margin-bottom: 50px;
+  }
+  .column-wrapper {
+    width: 100%;
+    margin: 100px 0 250px 0;
+  }
+  .window-image {
+    width: 100vw;
+    height: 200px;
+    top: 100px;
+  }
+  .decoration-image {
+    width: 100vw;
+    height: 200px;
+    top: 100px;
+  }
+  .upholstery-image {
+    width: 100vw;
+    height: 200px;
+    top: 100px;
+  }
+  .column-title {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .title {
+    padding-top: 33px;
+  }
+  .title h1 {
+    font-size: 24px;
+  }
+}
+/* @media only screen and (min-width: 375px) {
+  .column-container {
+    top: 305px;
+  }
+  .column {
+    height: 420px;
+  }
+  .mid {
+    padding-top: 40px;
+  }
+  .bot {
+    margin-bottom: 50px;
+  }
+  .column-wrapper {
+    margin: 0 0 100px 0;
+  }
+  .title {
+    padding-top: 33px;
+  }
+  .title h1 {
+    font-size: 24px;
+  }
+} */
