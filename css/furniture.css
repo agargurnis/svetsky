@@ -96,8 +96,64 @@ h1 {
 }
 .description {
   background-color: rgb(225, 222, 216);
-  margin-top: 43%;
-  padding: 5% 40% 5% 10%;
+  position: absolute;
+  /* margin-top: 43%; */
+  top: 30%;
+  padding: 2% 20% 2% 2%;
+}
+@media only screen and (max-width: 1920px) {
+  .description p {
+    font-size: 22px;
+  }
+  .description {
+    top: 25%;
+    padding: 2% 12.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .description p {
+    font-size: 20px;
+  }
+  .description {
+    top: 25%;
+    padding: 2% 12.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .description p {
+    font-size: 18px;
+  }
+  .description {
+    top: 25%;
+    padding: 2% 12.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .description p {
+    font-size: 16px;
+  }
+  .description {
+    top: 27.5%;
+    padding: 2% 12.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .description p {
+    font-size: 15px;
+  }
+  .description {
+    top: 25%;
+    padding: 2% 7.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .description p {
+    font-size: 13px;
+  }
+  .description {
+    top: 25%;
+    padding: 2% 7.5% 2% 2%;
+  }
 }
 /* @media only screen and (min-width: 320px) {
   .furniture-image {

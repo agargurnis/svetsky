@@ -62,8 +62,8 @@
     background-color: rgb(209, 203, 188);
   }
   .title h1 {
-    transform: translate(0, 12.5px);
-    -webkit-transform: translate(0, 12.5px);
+    transform: translate(0, 30.5px);
+    -webkit-transform: translate(0, 30.5px);
   }
   .insta-link {
     height: 50px;
@@ -75,23 +75,41 @@
     display: none;
   }
 }
-@media only screen and (max-width: 896px) {
-}
-
-/* @media only screen and (min-width: 320px) {
-  .title {
-    position: fixed;
-    padding-top: 35px;
-    padding-bottom: 10px;
-    background-color: rgb(209, 203, 188);
-  }
+@media only screen and (max-width: 800px) {
   .insta-link {
-    height: 35px;
-    width: 35px;
-    top: 25px;
-    right: 10px;
+    height: 40px;
+    width: 40px;
+    top: 35px;
+    right: 35px;
   }
   .info-link {
     display: none;
   }
-} */
+}
+@media only screen and (max-width: 600px) {
+  .insta-link {
+    top: 35px;
+    right: 25px;
+  }
+  .title h1 {
+    padding: 0 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .insta-link {
+    top: 30px;
+    right: 10px;
+  }
+  .title h1 {
+    padding: 0 10% 0 10%;
+    transform: translate(0, 10.5px);
+    -webkit-transform: translate(0, 10.5px);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .title h1 {
+    padding: 0 10% 0 10%;
+    transform: translate(0, 25.5px);
+    -webkit-transform: translate(0, 25.5px);
+  }
+}

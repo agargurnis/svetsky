@@ -361,3 +361,32 @@
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .hamburger-container {
+    top: 30px;
+    left: 10px;
+  }
+  .menu {
+    background-color: rgba(225, 222, 216, 1);
+    width: 65vw;
+  }
+  .menu ul {
+    margin-left: 60px;
+    margin-top: 55px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hamburger-container {
+    top: 18px;
+    left: 0px;
+  }
+  .menu {
+    background-color: rgba(225, 222, 216, 1);
+    width: 100vw;
+    height: 100vh;
+  }
+  .menu ul {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+}

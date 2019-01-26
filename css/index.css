@@ -238,6 +238,9 @@ h1 {
 #eng {
   cursor: pointer;
 }
+.sub-title-mobile {
+  display: none;
+}
 /* @media only screen and (max-width: 414px) {
   .title {
     top: 32px;

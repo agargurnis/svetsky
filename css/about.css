@@ -134,12 +134,12 @@ h1 {
 .l-above-container {
   display: none;
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1920px) {
   p {
-    font-size: 17px;
+    font-size: 21px;
   }
   .r-bottom-container {
-    padding: 0 10% 0 10%;
+    padding: 5% 10% 0 10%;
   }
   .r-top-container {
     background-size: 90% 60%;
@@ -149,7 +149,31 @@ h1 {
   .r-top-container h1 {
     padding-left: 20%;
     padding-top: 5%;
-    font-size: 22px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  p {
+    font-size: 20px;
+  }
+  .r-bottom-container {
+    padding: 5% 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  p {
+    font-size: 18px;
+  }
+  .r-bottom-container {
+    padding: 10% 10% 0 10%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  p {
+    font-size: 17px;
+  }
+  .r-bottom-container {
+    padding: 5% 10% 0 10%;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -164,10 +188,6 @@ h1 {
 }
 @media only screen and (max-width: 1024px) {
   .l-top-container {
-    background-image: url('../assets/about-bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
     height: 100%;
     width: 100%;
   }
@@ -192,6 +212,7 @@ h1 {
   .l-above-container {
     display: block;
     padding: 5% 5% 5% 5%;
+    background-color: rgb(225, 222, 216);
   }
   .l-under-container {
     background-color: rgb(225, 222, 216);
@@ -201,80 +222,55 @@ h1 {
   p {
     font-size: 18px;
   }
-  .title {
-    padding-top: 24px;
-  }
 }
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 800px) {
   .about-container {
-    top: 200px;
+    top: 33vh;
   }
 }
+
 @media only screen and (max-width: 812px) {
   .about-container {
-    top: 100px;
+    top: 45vh;
   }
   .l-above-container {
-    padding-bottom: 7%;
+    padding-bottom: 0.5%;
   }
 }
 @media only screen and (max-width: 768px) {
   .about-container {
-    top: 190px;
-    height: 55vh;
-  }
-}
-@media only screen and (max-width: 414px) {
-  .about-container {
-    top: 320px;
-    height: 60vh;
-  }
-  .l-top-container {
-    height: 60%;
-  }
-}
-/* @media only screen and (max-width: 320px) {
-  .about-container {
-    top: 450px;
-    width: 90vw;
-    height: 90vh;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .container {
-    overflow: visible;
-  }
-  .about-container {
-    overflow: visible;
-    top: 430px;
-    width: 90vw;
-    height: 90vh;
-  }
-  .right-container {
-    display: none;
-  }
-  .left-container {
-    width: 100%;
-  }
-  .l-bottom-container {
-    display: none;
+    top: 35vh;
   }
   .l-above-container {
-    display: block;
-    padding: 5% 0 5% 5%;
+    padding-bottom: 3.5%;
   }
-  .l-under-container {
-    background-color: rgb(225, 222, 216);
-    display: block;
-    padding: 5% 0 5% 5%;
+}
+@media only screen and (max-width: 736px) {
+  .about-container {
+    top: 50vh;
   }
-  .l-top-container {
-    height: 33%;
+}
+@media only screen and (max-width: 667px) {
+  .about-container {
+    top: 55vh;
   }
-  p {
-    font-size: 18px;
+  .l-above-container {
+    padding-bottom: 0.5%;
   }
-  .title {
-    padding-top: 24px;
+}
+@media only screen and (max-width: 420px) {
+  .about-container {
+    top: 39.5vh;
   }
-} */
+  .l-above-container {
+    padding-bottom: 5.5%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .about-container {
+    top: 39.5vh;
+  }
+  .l-above-container {
+    padding-bottom: 7.5%;
+  }
+}

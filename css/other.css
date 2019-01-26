@@ -145,7 +145,56 @@ h1 {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (max-width: 1920px) {
+  .column-title {
+    font-size: 24px;
+  }
+  .column-info p {
+    font-size: 21.5px;
+  }
+  .column-container {
+    top: 55%;
+    height: 55vh;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .column-info p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .column-info p {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .column-container {
+    top: 55%;
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .column-title {
+    font-size: 21px;
+  }
+  .column-container {
+    top: 57.5%;
+    height: 65vh;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .column-title {
+    font-size: 18px;
+  }
+  .column-info p {
+    font-size: 15px;
+  }
+  .column-container {
+    top: 55.5%;
+    height: 70vh;
+  }
+}
+/* @media only screen and (min-width: 320px) {
   .column-container {
     display: block;
     top: 120px;
@@ -198,7 +247,7 @@ h1 {
   .title h1 {
     font-size: 24px;
   }
-}
+} */
 /* @media only screen and (min-width: 375px) {
   .column-container {
     top: 305px;
