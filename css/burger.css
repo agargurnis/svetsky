@@ -333,7 +333,7 @@
   }
   .menu {
     background-color: rgba(225, 222, 216, 1);
-    width: 35vw;
+    width: 34vw;
   }
   .menu ul {
     margin-left: 60px;
@@ -343,7 +343,7 @@
     font-size: 18px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .hamburger-container {
     top: 25px;
     left: 25px;
@@ -388,5 +388,10 @@
   .menu ul {
     margin-left: 60px;
     margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .menu ul {
+    font-size: 16px;
   }
 }

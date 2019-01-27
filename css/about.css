@@ -69,7 +69,6 @@ h1 {
   font-style: normal;
 }
 .container {
-  /* background-color: rgb(209, 203, 188); */
   width: 100%;
   align-self: auto;
   height: 100vh;
@@ -225,21 +224,12 @@ h1 {
 }
 @media only screen and (max-width: 800px) {
   .about-container {
-    top: 33vh;
-  }
-}
-
-@media only screen and (max-width: 812px) {
-  .about-container {
-    top: 45vh;
-  }
-  .l-above-container {
-    padding-bottom: 0.5%;
+    top: 33%;
   }
 }
 @media only screen and (max-width: 768px) {
   .about-container {
-    top: 35vh;
+    top: 35%;
   }
   .l-above-container {
     padding-bottom: 3.5%;
@@ -247,29 +237,28 @@ h1 {
 }
 @media only screen and (max-width: 736px) {
   .about-container {
-    top: 50vh;
+    top: 50%;
   }
 }
 @media only screen and (max-width: 667px) {
   .about-container {
-    top: 55vh;
+    top: 55%;
   }
-  .l-above-container {
-    padding-bottom: 0.5%;
+}
+@media only screen and (max-width: 600px) {
+  .about-container {
+    top: 35%;
   }
 }
 @media only screen and (max-width: 420px) {
   .about-container {
-    top: 39.5vh;
+    top: 39.5%;
   }
   .l-above-container {
     padding-bottom: 5.5%;
   }
 }
 @media only screen and (max-width: 320px) {
-  .about-container {
-    top: 39.5vh;
-  }
   .l-above-container {
     padding-bottom: 7.5%;
   }

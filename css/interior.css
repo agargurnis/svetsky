@@ -125,9 +125,9 @@ h1 {
 .description {
   background-color: rgba(225, 222, 216, 0.9);
   position: absolute;
-  top: 20%;
+  top: 22.5%;
   right: 5%;
-  width: 80%;
+  width: 25%;
   padding: 2%;
 }
 .interior-image {
@@ -137,49 +137,102 @@ h1 {
   width: 70%;
   height: 82.5vh;
   background-size: cover;
+  background-position: right;
   animation: carousel 40s infinite;
 }
 .interior-container {
   animation: fadeIn 1.5s ease-in-out;
 }
-/* @media only screen and (min-width: 320px) {
-  p {
+@media only screen and (max-width: 1920px) {
+  .description {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .description p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .description {
+    width: 35%;
+  }
+  .description p {
+    font-size: 19px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .description p {
     font-size: 18px;
   }
-  .title {
-    padding-top: 33px;
+}
+@media only screen and (max-width: 1366px) {
+  .description {
+    width: 36%;
   }
+  .description p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .description {
+    width: 50%;
+  }
+  .description p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 800px) {
   .title h1 {
     font-size: 24px;
   }
+  .title {
+    padding-top: 12.5px;
+  }
   .description {
-    left: 0;
-    top: 300px;
-    background-color: rgba(225, 222, 216, 0.75);
-    padding-bottom: 20px;
+    top: 55%;
+    width: 90%;
+    background-color: rgba(225, 222, 216, 1);
+    padding-bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
   }
   .interior-image {
     background-position: right;
     position: fixed;
     top: 65px;
-    left: 35px;
     width: 90%;
     height: 50vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
   }
 }
-@media only screen and (min-width: 375px) {
-  .title {
-    padding-top: 28px;
-  }
-  .title h1 {
-    font-size: 27px;
-  }
+@media only screen and (max-width: 736px) {
   .description {
-    top: 380px;
-    width: 85%;
+    background-color: rgba(225, 222, 216, 0.75);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .description {
+    left: 0;
+    top: 55%;
+    width: 100%;
+    padding-bottom: 10px;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
   .interior-image {
-    left: 42px;
-    width: 90%;
+    background-position: right;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
-} */
+}
+@media only screen and (max-width: 320px) {
+}

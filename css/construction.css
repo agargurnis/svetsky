@@ -136,14 +136,53 @@ h1 {
     font-size: 19px;
   }
 }
+@media only screen and (max-width: 736px) {
+  .description {
+    left: 32%;
+    width: 60vw;
+    top: 42vh;
+    background-color: rgba(225, 222, 216, 0.75);
+    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+  }
+  .construction-image {
+    top: 40px;
+    height: 75%;
+    position: fixed;
+  }
+}
 @media only screen and (max-width: 420px) {
   .description {
     left: 0;
     width: 100vw;
     top: 43vh;
-    background-color: rgba(225, 222, 216, 0.75);
+    padding: 3%;
+    background-color: rgba(225, 222, 216, 1);
     transform: translate(0%, 0%);
     -webkit-transform: translate(0%, 0%);
+  }
+  .construction-image {
+    left: 0;
+    top: 20px;
+    width: 100vw;
+    height: 40vh;
+  }
+  .title {
+    padding-top: 0px;
+  }
+  .title h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .title {
+    padding-top: 2px;
+  }
+  .title h1 {
+    font-size: 18px;
+  }
+  .construction-image {
+    top: 40px;
   }
 }
 /* @media only screen and (min-width: 375px) {
