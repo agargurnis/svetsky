@@ -141,11 +141,11 @@ h1 {
   font-style: normal;
 }
 .preload-images {
-  background: url('../assets/floor1.jpg') no-repeat -9999px -9999px,
-    url('../assets/floor2.jpg') no-repeat -9999px -9999px,
-    url('../assets/floor3.jpg') no-repeat -9999px -9999px,
-    url('../assets/floor4.jpg') no-repeat -9999px -9999px,
-    url('../assets/floor5.jpg') no-repeat -9999px -9999px;
+  background: url('../assets/floor1.png') no-repeat -9999px -9999px,
+    url('../assets/floor2.png') no-repeat -9999px -9999px,
+    url('../assets/floor3.png') no-repeat -9999px -9999px,
+    url('../assets/floor4.png') no-repeat -9999px -9999px,
+    url('../assets/floor5.png') no-repeat -9999px -9999px;
 }
 .italic {
   font-style: italic;
