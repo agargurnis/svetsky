@@ -141,7 +141,7 @@ h1 {
   animation: carousel 40s infinite;
 }
 .interior-container {
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 @media only screen and (max-width: 1920px) {
   .description {

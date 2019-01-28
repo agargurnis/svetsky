@@ -75,7 +75,7 @@ h1 {
   overflow: hidden;
 }
 .other-container {
-  animation: fadeIn 1.5s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 .column-container {
   display: flex;
