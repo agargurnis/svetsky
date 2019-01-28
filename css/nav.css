@@ -13,17 +13,11 @@
 .title {
   position: absolute;
   top: 10.45vh;
-  /* left: 50%; */
   height: 65px;
   width: 100%;
   text-align: center;
   z-index: 1;
-  /* transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%); */
 }
-/* .title p {
-  font-size: 29px;
-} */
 .title h1 {
   font-size: 33px;
 }
@@ -95,21 +89,29 @@
     padding: 0 10% 0 10%;
   }
 }
-@media only screen and (max-width: 500px) {
-  .insta-link {
-    top: 30px;
-    right: 10px;
-  }
+/* @media only screen and (max-width: 500px) {
+  
   .title h1 {
     padding: 0 10% 0 10%;
     transform: translate(0, 10.5px);
     -webkit-transform: translate(0, 10.5px);
   }
-}
+} */
 @media only screen and (max-width: 420px) {
   .title h1 {
     padding: 0 10% 0 10%;
     transform: translate(0, 25.5px);
     -webkit-transform: translate(0, 25.5px);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .insta-link {
+    top: 32px;
+    right: 10px;
+  }
+  .title h1 {
+    padding: 0 10% 0 10%;
+    transform: translate(0, 27.5px);
+    -webkit-transform: translate(0, 27.5px);
   }
 }

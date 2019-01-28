@@ -117,6 +117,7 @@
 body {
   line-height: 1.4;
   background-color: rgb(209, 203, 188);
+  overflow: hidden;
 }
 a {
   color: #1c3b51;
@@ -241,13 +242,43 @@ h1 {
 .sub-title-mobile {
   display: none;
 }
-/* @media only screen and (max-width: 414px) {
+@media only screen and (max-width: 1600px) {
+  .sub-title {
+    top: 52%;
+  }
   .title {
-    top: 32px;
+    top: 48%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .menu-image {
+    left: 0;
+    top: 33%;
+    transform: translateX(-140%) translateY(-50%);
+    width: 100vw;
+  }
+  .language-checkbox:checked ~ .menu-image {
+    transform: translateY(-50%) translateX(-36.5%);
+    transition-duration: 2s;
+    transition-timing-function: ease;
+  }
+  .insta-link {
+    display: none;
+  }
+  .info-link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .title {
+    top: 52px;
     position: fixed;
     padding-top: 35px;
     padding-bottom: 10px;
     background-color: rgb(209, 203, 188);
+  }
+  .title h1 {
+    font-size: 26px;
   }
   .title-transition {
     animation: none;
@@ -259,6 +290,7 @@ h1 {
     display: none;
   }
   .sub-title-mobile {
+    display: block;
     z-index: 3;
     position: absolute;
     text-align: center;
@@ -284,11 +316,11 @@ h1 {
     cursor: pointer;
   }
   .insta-link {
-    height: 35px;
-    width: 35px;
-    top: 25px;
-    right: 10px;
-    display: none;
+    height: 40px;
+    width: 40px;
+    top: 35px;
+    right: 37.5px;
+    display: block;
   }
   .info-link {
     display: none;
@@ -296,4 +328,4 @@ h1 {
   p {
     font-size: 18px;
   }
-} */
+}

@@ -325,7 +325,6 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-
 @media only screen and (max-width: 1024px) {
   .hamburger-container {
     top: 25px;
@@ -363,7 +362,7 @@
 }
 @media only screen and (max-width: 600px) {
   .hamburger-container {
-    top: 30px;
+    top: 25px;
     left: 10px;
   }
   .menu {
@@ -377,7 +376,7 @@
 }
 @media only screen and (max-width: 500px) {
   .hamburger-container {
-    top: 18px;
+    top: 22px;
     left: 0px;
   }
   .menu {
