@@ -214,8 +214,8 @@ h1 {
 .menu-image {
   position: absolute;
   left: -20%;
-  top: 50%;
-  transform: translateX(-150%) translateY(-51%);
+  top: 34%;
+  transform: translateX(-150%) translateY(-50%);
   background-color: rgb(209, 203, 188);
   width: 89vw;
   align-self: auto;
@@ -229,7 +229,7 @@ h1 {
   display: none;
 }
 .language-checkbox:checked ~ .menu-image {
-  transform: translateY(-51%) translateX(-48%);
+  transform: translateY(-50%) translateX(-48%);
   transition-duration: 2s;
   transition-timing-function: ease;
 }
@@ -242,12 +242,35 @@ h1 {
 .sub-title-mobile {
   display: none;
 }
+@media only screen and (max-width: 1680px) {
+  .menu-image {
+    top: 36%;
+  }
+}
 @media only screen and (max-width: 1600px) {
   .sub-title {
     top: 52%;
   }
   .title {
     top: 48%;
+  }
+  .menu-image {
+    top: 32%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .menu-image {
+    top: 29%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .menu-image {
+    top: 32%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .menu-image {
+    top: 34%;
   }
 }
 @media only screen and (max-width: 1024px) {
