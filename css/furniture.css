@@ -97,9 +97,15 @@ h1 {
 .description {
   background-color: rgb(225, 222, 216);
   position: absolute;
-  /* margin-top: 43%; */
   top: 30%;
   padding: 2% 20% 2% 2%;
+}
+.arrow-link {
+  font-size: 45px;
+  position: absolute;
+  left: 85%;
+  top: 45%;
+  z-index: 1;
 }
 @media only screen and (max-width: 1920px) {
   .description p {
@@ -137,12 +143,17 @@ h1 {
     padding: 2% 12.5% 2% 2%;
   }
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
   .description p {
     font-size: 15px;
   }
   .description {
     top: 25%;
+    padding: 2% 12.5% 2% 2%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .description {
     padding: 2% 7.5% 2% 2%;
   }
 }
@@ -156,6 +167,9 @@ h1 {
   }
 }
 @media only screen and (max-width: 800px) {
+  .arrow-link {
+    display: none;
+  }
   .title h1 {
     font-size: 24px;
   }
