@@ -256,4 +256,7 @@ span {
   .about-container {
     height: 130%;
   }
+  .text {
+    padding: 10% 10% 7.5% 12.5%;
+  }
 }
