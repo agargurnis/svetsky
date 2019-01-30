@@ -245,6 +245,11 @@ button:focus {
     top: 55%;
   }
 }
+@media only screen and (max-width: 1366px) {
+  .contact-container {
+    top: 60%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .contact-container {
     display: inline-grid;

@@ -244,11 +244,13 @@ span {
   justify-content: center;
 }
 .r-bot-l {
-  text-align: left;
-  padding-right: 18%;
+  position: absolute;
+  right: 22%;
 }
 .r-bot-r {
   text-align: right;
+  position: absolute;
+  right: 7%;
 }
 .r-bot-outside {
   position: absolute;
@@ -257,6 +259,9 @@ span {
 .r-column {
   width: 25%;
   padding: 0 20px 0 30px;
+}
+.not-mobile {
+  display: none;
 }
 @media only screen and (max-width: 1920px) {
   .r-container p {
@@ -522,12 +527,13 @@ span {
     justify-content: center;
   }
   .r-bot-l {
-    text-align: left;
-    padding-right: 100px;
+    position: absolute;
+    right: 42%;
   }
   .r-bot-r {
     text-align: right;
-    margin-right: -190px;
+    position: absolute;
+    right: 15%;
   }
   .r-bot-outside {
     position: absolute;
@@ -551,12 +557,8 @@ span {
     padding: 0 10px 0 50px;
   }
   .r-bot-l {
-    text-align: left;
-    padding-right: 50px;
-  }
-  .r-bot-r {
-    text-align: right;
-    margin-right: -150px;
+    position: absolute;
+    right: 44%;
   }
   .r-bot-outside {
     position: absolute;
@@ -586,16 +588,17 @@ span {
     background-color: rgb(225, 222, 216);
   }
   .r-bot-l {
-    text-align: left;
-    padding-right: 10px;
+    position: absolute;
+    right: 42%;
   }
   .r-bot-r {
     text-align: right;
-    margin-right: -100px;
+    position: absolute;
+    right: 7%;
   }
   .r-bot-outside {
     position: absolute;
-    right: 70%;
+    right: 73%;
   }
 }
 @media only screen and (max-width: 320px) {

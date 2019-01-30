@@ -248,6 +248,9 @@ span {
     height: 40vh;
     position: absolute;
   }
+  .text {
+    padding: 5% 10% 7.5% 12.5%;
+  }
 }
 @media only screen and (max-width: 320px) {
   .about-container {

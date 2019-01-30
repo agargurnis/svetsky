@@ -100,7 +100,7 @@ h1 {
   bottom: 0;
   left: 15%;
   right: 15%;
-  height: 80vh;
+  top: 20%;
 }
 @media only screen and (max-width: 1600px) {
   .description {
@@ -115,7 +115,15 @@ h1 {
     font-size: 15pt;
   }
 }
+@media only screen and (max-width: 1366px) {
+  .construction-image {
+    top: 25%;
+  }
+}
 @media only screen and (max-width: 1024px) {
+  .construction-image {
+    top: 20%;
+  }
   .description {
     width: 40vw;
   }
