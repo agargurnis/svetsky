@@ -12,24 +12,28 @@
 }
 .title {
   position: absolute;
-  top: 10.45vh;
+  top: 110px;
   height: 65px;
   width: 100%;
   text-align: center;
   z-index: 1;
 }
 .title h1 {
-  font-size: 33px;
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5rem;
 }
 .insta-link {
   background-image: url('../assets/insta.png');
   display: block;
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 2.5rem;
+  height: 2.5rem;
   text-indent: -9999px;
   position: fixed;
-  top: 10.4vh;
+  top: 115px;
   right: 180px;
   z-index: 2;
 }
@@ -38,14 +42,14 @@
   color: #1c3b51;
   font-weight: normal;
   font-style: normal;
-  font-size: 26px;
+  font-size: 1.5rem;
   display: block;
   padding-top: 18px;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   position: fixed;
-  top: 10.4vh;
-  right: 105px;
+  top: 110px;
+  right: 100px;
   z-index: 2;
 }
 @media only screen and (max-width: 1024px) {

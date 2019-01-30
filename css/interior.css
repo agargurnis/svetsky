@@ -102,13 +102,11 @@ a {
 p {
   color: #1c3b51;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 22px;
+  font-size: 14pt;
+  margin-bottom: 20pt;
 }
-h1 {
-  font-family: 'Chap', Arial, sans-serif;
-  color: #1c3b51;
-  font-weight: normal;
-  font-style: normal;
+span {
+  font-size: 24pt;
 }
 .preload-images {
   background: url('../assets/interior1.jpg') no-repeat -9999px -9999px,
@@ -116,123 +114,135 @@ h1 {
     url('../assets/interior3.jpg') no-repeat -9999px -9999px,
     url('../assets/interior4.jpg') no-repeat -9999px -9999px;
 }
-.container {
-  width: 100%;
-  align-self: auto;
-  height: 100vh;
-  overflow: hidden;
-}
-.description {
-  background-color: rgba(225, 222, 216, 0.9);
-  position: absolute;
-  top: 22.5%;
-  right: 5%;
-  width: 25%;
-  padding: 2%;
-}
-.interior-image {
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  width: 70%;
-  height: 82.5vh;
-  background-size: cover;
-  background-position: right;
-  animation: carousel 40s infinite;
+.title h1 {
+  font-size: 24pt;
 }
 .interior-container {
   animation: fadeIn 1s ease-in-out;
+  position: absolute;
+  display: flex;
+  top: 25%;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+}
+.r-container {
+  background-color: rgba(225, 222, 216, 1);
+  width: 30%;
+}
+.l-container {
+  width: 70%;
+}
+.interior-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  animation: carousel 40s infinite;
+}
+.text {
+  padding: 15%;
+  word-break: normal;
+  hyphens: auto;
 }
 @media only screen and (max-width: 1920px) {
-  .description {
-    width: 33%;
+  p {
+    font-size: 13pt;
+  }
+  span {
+    font-size: 23pt;
   }
 }
 @media only screen and (max-width: 1680px) {
-  .description p {
-    font-size: 20px;
+  p {
+    font-size: 12pt;
+  }
+  span {
+    font-size: 22pt;
   }
 }
 @media only screen and (max-width: 1600px) {
-  .description {
-    width: 35%;
+  p {
+    font-size: 11pt;
   }
-  .description p {
-    font-size: 19px;
+  span {
+    font-size: 21pt;
   }
 }
 @media only screen and (max-width: 1440px) {
-  .description p {
-    font-size: 18px;
+  p {
+    font-size: 10pt;
+  }
+  span {
+    font-size: 21pt;
   }
 }
 @media only screen and (max-width: 1366px) {
-  .description {
-    width: 36%;
+  p {
+    font-size: 9pt;
   }
-  .description p {
-    font-size: 16px;
+  span {
+    font-size: 20pt;
+  }
+  .text {
+    padding: 12.5%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .description {
-    width: 50%;
+  .interior-container p {
+    font-size: 8pt;
   }
-  .description p {
-    font-size: 15px;
+  .interior-container span {
+    font-size: 19pt;
+  }
+  .interior-container {
+    top: 15%;
+    left: 5%;
+    right: 5%;
   }
 }
 @media only screen and (max-width: 800px) {
-  .title h1 {
-    font-size: 24px;
+  .interior-container {
+    display: block;
+    top: 10%;
   }
-  .title {
-    padding-top: 12.5px;
+  .r-container {
+    width: 100%;
+    top: 40vh;
+    position: absolute;
   }
-  .description {
-    top: 55%;
-    width: 90%;
-    background-color: rgba(225, 222, 216, 1);
-    padding-bottom: 10px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-  }
-  .interior-image {
-    background-position: right;
-    position: fixed;
-    top: 65px;
-    width: 90%;
-    height: 50vh;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
+  .l-container {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
   }
 }
 @media only screen and (max-width: 736px) {
-  .description {
-    background-color: rgba(225, 222, 216, 0.75);
+  .l-container {
+    height: 60vh;
+  }
+  .r-container {
+    top: 60vh;
+  }
+  .text {
+    padding: 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .l-container {
+    height: 40vh;
+  }
+  .r-container {
+    top: 40vh;
+  }
+  .text {
+    padding: 12.5%;
   }
 }
 @media only screen and (max-width: 420px) {
-  .description {
-    left: 0;
-    top: 55%;
-    width: 100%;
-    padding-bottom: 10px;
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
+  .title h1 {
+    font-size: 17pt;
+    padding-top: 13px;
   }
-  .interior-image {
-    background-position: right;
-    position: fixed;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-  }
-}
-@media only screen and (max-width: 320px) {
 }

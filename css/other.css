@@ -299,13 +299,13 @@ h1 {
     width: 80%;
   }
   .window-image {
-    width: 100vw;
+    width: 96vw;
   }
   .decoration-image {
-    width: 100vw;
+    width: 96vw;
   }
   .upholstery-image {
-    width: 100vw;
+    width: 96vw;
   }
 }
 @media only screen and (max-width: 320px) {

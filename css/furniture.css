@@ -60,45 +60,43 @@ a {
 p {
   color: #1c3b51;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 22px;
+  font-size: 14pt;
+  margin-bottom: 20pt;
 }
-h1 {
-  font-family: 'Chap', Arial, sans-serif;
-  color: #1c3b51;
-  font-weight: normal;
-  font-style: normal;
+span {
+  font-size: 24pt;
 }
-.container {
-  width: 100%;
-  align-self: auto;
-  height: 100vh;
-  overflow: hidden;
+.title h1 {
+  font-size: 24pt;
 }
 .furniture-container {
   animation: fadeIn 1s ease-in-out;
-  width: 100vw;
   display: flex;
 }
 .l-container {
-  width: 60vw;
+  width: 60%;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  bottom: 10%;
 }
 .r-container {
-  width: 40vw;
+  width: 40%;
+  background-color: rgb(225, 222, 216);
+  position: absolute;
+  right: 0;
+  top: 25%;
 }
 .furniture-image {
   background-image: url('../assets/furniture-bg.jpg');
   background-size: cover;
-  position: absolute;
-  left: 0;
-  top: 20%;
-  width: 60%;
-  height: 72%;
+  width: 100%;
+  height: 100%;
 }
-.description {
-  background-color: rgb(225, 222, 216);
-  position: absolute;
-  top: 30%;
-  padding: 2% 20% 2% 2%;
+.text {
+  padding: 12.5% 37.5% 12.5% 10%;
+  word-break: normal;
+  hyphens: auto;
 }
 .arrow-link {
   font-size: 45px;
@@ -108,142 +106,145 @@ h1 {
   z-index: 1;
 }
 @media only screen and (max-width: 1920px) {
-  .description p {
-    font-size: 22px;
+  .l-container {
+    top: 17%;
+    bottom: 5%;
   }
-  .description {
-    top: 25%;
-    padding: 2% 12.5% 2% 2%;
+  p {
+    font-size: 12pt;
+  }
+  span {
+    font-size: 22pt;
   }
 }
 @media only screen and (max-width: 1680px) {
-  .description p {
-    font-size: 20px;
-  }
-  .description {
+  .r-container {
     top: 25%;
-    padding: 2% 12.5% 2% 2%;
+  }
+  p {
+    font-size: 11pt;
+  }
+  span {
+    font-size: 21pt;
   }
 }
 @media only screen and (max-width: 1600px) {
-  .description p {
-    font-size: 18px;
+  .l-container {
+    top: 20%;
+    bottom: 5%;
   }
-  .description {
-    top: 25%;
-    padding: 2% 12.5% 2% 2%;
+  p {
+    font-size: 10pt;
+  }
+  span {
+    font-size: 20pt;
   }
 }
 @media only screen and (max-width: 1440px) {
-  .description p {
-    font-size: 16px;
+  p {
+    font-size: 9pt;
   }
-  .description {
-    top: 27.5%;
-    padding: 2% 12.5% 2% 2%;
+  span {
+    font-size: 19pt;
   }
 }
 @media only screen and (max-width: 1366px) {
-  .description p {
-    font-size: 15px;
+  p {
+    font-size: 8pt;
   }
-  .description {
-    top: 25%;
-    padding: 2% 12.5% 2% 2%;
+  span {
+    font-size: 18pt;
   }
 }
 @media only screen and (max-width: 1280px) {
-  .description {
-    padding: 2% 7.5% 2% 2%;
+  .l-container {
+    top: 25%;
+    bottom: 5%;
+  }
+  .r-container {
+    top: 30%;
+    bottom: 10%;
+  }
+  p {
+    font-size: 7pt;
+  }
+  span {
+    font-size: 17pt;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .description p {
-    font-size: 13px;
+  .l-container {
+    top: 20%;
+    bottom: 20%;
   }
-  .description {
-    top: 25%;
-    padding: 2% 7.5% 2% 2%;
+  .r-container {
+    top: 23%;
+    bottom: 23%;
+  }
+  .furniture-container p {
+    font-size: 6pt;
+  }
+  .furniture-container span {
+    font-size: 16pt;
+  }
+  .text {
+    padding: 7.5% 35% 7.5% 10%;
   }
 }
 @media only screen and (max-width: 800px) {
   .arrow-link {
     display: none;
   }
-  .title h1 {
-    font-size: 24px;
-  }
-  .title {
-    padding-top: 12.5px;
-  }
   .furniture-container {
     display: block;
-  }
-  .l-container {
-    width: 100vw;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
   }
   .r-container {
-    width: 100vw;
+    width: 100%;
+    top: 40vh;
+    position: absolute;
   }
-  .description p {
-    font-size: 17px;
+  .l-container {
+    width: 100%;
+    height: 40vh;
+    position: absolute;
   }
-  .description {
-    top: 55%;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-  }
-  .furniture-image {
-    background-position: right;
-    position: fixed;
-    width: 90%;
-    height: 50vh;
-    top: 65px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
+  .text {
+    background-color: rgb(225, 222, 216);
+    padding: 7.5%;
   }
 }
 @media only screen and (max-width: 736px) {
-  .description {
-    background-color: rgba(225, 222, 216, 0.75);
+  .l-container {
+    height: 70vh;
+  }
+  .r-container {
+    top: 60vh;
+  }
+  .text {
+    padding: 5%;
+  }
+  .furniture-image {
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .l-container {
+    height: 40vh;
+  }
+  .r-container {
+    top: 40vh;
+  }
+  .text {
+    padding: 12.5%;
   }
 }
 @media only screen and (max-width: 420px) {
-  .description {
-    left: 0;
-    top: 55%;
-    width: 100%;
-    padding: 3% 3% 5% 3%;
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-  }
-  .furniture-image {
-    background-position: right;
-    position: fixed;
-    top: 65px;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-  }
-}
-@media only screen and (max-width: 375px) {
-  .title {
-    padding-top: 12px;
-  }
   .title h1 {
-    font-size: 21px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .title {
-    padding-top: 12px;
-  }
-  .title h1 {
-    font-size: 18px;
+    font-size: 17pt;
+    padding-top: 13px;
   }
 }
