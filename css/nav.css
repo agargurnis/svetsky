@@ -23,7 +23,7 @@
   color: #1c3b51;
   font-weight: normal;
   font-style: normal;
-  font-size: 2.5rem;
+  font-size: 30pt;
 }
 .insta-link {
   background-image: url('../assets/insta.png');
@@ -45,8 +45,6 @@
   font-size: 1.5rem;
   display: block;
   padding-top: 18px;
-  /* width: 50px;
-  height: 50px; */
   position: fixed;
   top: 110px;
   right: 100px;
@@ -64,9 +62,9 @@
     -webkit-transform: translate(0, 30.5px);
   }
   .insta-link {
-    height: 50px;
-    width: 50px;
-    top: 25px;
+    height: 40px;
+    width: 40px;
+    top: 36px;
     right: 25px;
   }
   .info-link {
@@ -74,9 +72,12 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .title h1 {
+    font-size: 26pt;
+  }
   .insta-link {
-    height: 40px;
-    width: 40px;
+    height: 39px;
+    width: 39px;
     top: 35px;
     right: 37.5px;
   }
@@ -93,29 +94,17 @@
     padding: 0 10% 0 10%;
   }
 }
-/* @media only screen and (max-width: 500px) {
-  
-  .title h1 {
-    padding: 0 10% 0 10%;
-    transform: translate(0, 10.5px);
-    -webkit-transform: translate(0, 10.5px);
-  }
-} */
-@media only screen and (max-width: 420px) {
-  .title h1 {
-    padding: 0 10% 0 10%;
-    transform: translate(0, 25.5px);
-    -webkit-transform: translate(0, 25.5px);
-  }
-}
 @media only screen and (max-width: 420px) {
   .insta-link {
-    top: 32px;
+    height: 37px;
+    width: 37px;
+    top: 34px;
     right: 10px;
   }
   .title h1 {
+    font-size: 28pt;
     padding: 0 10% 0 10%;
-    transform: translate(0, 27.5px);
-    -webkit-transform: translate(0, 27.5px);
+    transform: translate(0, 21.5px);
+    -webkit-transform: translate(0, 21.5px);
   }
 }

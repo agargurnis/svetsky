@@ -115,7 +115,8 @@ span {
     url('../assets/interior4.jpg') no-repeat -9999px -9999px;
 }
 .title h1 {
-  font-size: 24pt;
+  font-size: 26pt;
+  padding-top: 5px;
 }
 .interior-container {
   animation: fadeIn 1s ease-in-out;
@@ -168,6 +169,9 @@ span {
   }
   span {
     font-size: 21pt;
+  }
+  .title h1 {
+    font-size: 24pt;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -242,7 +246,13 @@ span {
 }
 @media only screen and (max-width: 420px) {
   .title h1 {
+    font-size: 19pt;
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .title h1 {
     font-size: 17pt;
-    padding-top: 13px;
+    padding-top: 15px;
   }
 }

@@ -52,6 +52,7 @@
 body {
   line-height: 1.4;
   background-color: rgb(209, 203, 188);
+  overflow: hidden;
 }
 a {
   color: #1c3b51;
@@ -60,33 +61,30 @@ a {
 p {
   color: #1c3b51;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 22px;
+  font-size: 14pt;
+  margin-bottom: 20pt;
 }
 h1 {
   font-family: 'Chap', Arial, sans-serif;
   color: #1c3b51;
   font-weight: normal;
   font-style: normal;
-}
-.container {
-  width: 100%;
-  align-self: auto;
-  height: 100vh;
-  overflow: hidden;
+  font-size: 24pt;
+  margin-bottom: 20pt;
 }
 .other-container {
   animation: fadeIn 1s ease-in-out;
+  position: absolute;
+  top: 23%;
+  bottom: 23%;
+  left: 10%;
+  right: 10%;
 }
 .column-container {
   display: flex;
   margin: 0 auto;
-  width: 90vw;
-  height: 50vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
 .column-wrapper {
   height: 100%;
@@ -95,113 +93,194 @@ h1 {
 .column {
   margin: 0 auto;
   background-color: rgb(225, 222, 216);
-  width: 55%;
+  width: 432px;
   height: 100%;
   text-align: center;
 }
 .column-info {
-  margin-top: 10%;
-  padding: 5% 15% 0 15%;
+  position: relative;
+  top: 20%;
+  padding: 5% 11% 5% 11%;
+  font-size: 14pt;
 }
 .column-title {
   font-family: 'Chap', Arial, sans-serif;
   color: #1c3b51;
   font-weight: normal;
   font-style: normal;
-  font-size: 29px;
-  padding-top: 4%;
-  padding-bottom: 2%;
+  font-size: 18pt;
+  position: relative;
+  top: 7.5%;
+}
+.mid-email {
+  color: #1c3b51;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14pt;
+  position: relative;
+  top: 20%;
+  text-align: center;
+}
+.bot-email {
+  display: none;
+}
+.mid-email span {
+  font-family: 'Chap', Arial, sans-serif;
+  color: #1c3b51;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14pt;
 }
 .window-image {
   position: relative;
-  top: 13vh;
+  top: 40%;
   left: 50%;
-  height: 25vh;
-  width: 25vw;
+  height: 50%;
+  width: 140%;
   background-image: url('../assets/window.jpg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
 .decoration-image {
   position: relative;
-  top: 13vh;
+  top: 40%;
   left: 50%;
-  height: 25vh;
-  width: 25vw;
+  height: 50%;
+  width: 140%;
   background-image: url('../assets/decoration.jpg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
 .upholstery-image {
   position: relative;
-  top: 13vh;
+  top: 40%;
   left: 50%;
-  height: 25vh;
-  width: 25vw;
+  height: 50%;
+  width: 140%;
   background-image: url('../assets/upholstery.jpg');
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 1920px) {
-  .column-title {
-    font-size: 24px;
+  .column-info {
+    top: 20%;
+    padding: 0% 11% 5% 11%;
+    font-size: 14pt;
   }
-  .column-info p {
-    font-size: 21.5px;
+  .column {
+    width: 350px;
   }
-  .column-container {
-    top: 55%;
-    height: 55vh;
+  .other-container {
+    bottom: 20%;
+  }
+  .mid-email {
+    top: 10%;
   }
 }
 @media only screen and (max-width: 1680px) {
   .column-info p {
-    font-size: 20px;
+    font-size: 13pt;
+  }
+  .column {
+    width: 300px;
+  }
+  .mid-email p {
+    font-size: 13pt;
+  }
+  .mid-email span {
+    font-size: 13pt;
   }
 }
 @media only screen and (max-width: 1600px) {
   .column-info p {
-    font-size: 17px;
+    font-size: 11pt;
+  }
+  .column-title {
+    font-size: 16pt;
+  }
+  .column {
+    width: 280px;
+  }
+  .other-container {
+    bottom: 20%;
+  }
+  .mid-email p {
+    font-size: 11pt;
+  }
+  .mid-email span {
+    font-size: 11pt;
   }
 }
 @media only screen and (max-width: 1440px) {
-  .column-container {
-    top: 55%;
-    height: 60vh;
+  .column {
+    width: 250px;
   }
 }
-@media only screen and (max-width: 1280px) {
-  .column-title {
-    font-size: 21px;
+@media only screen and (max-width: 1366px) {
+  .other-container {
+    top: 27%;
+    bottom: 10%;
+    left: 5%;
+    right: 5%;
   }
-  .column-container {
-    top: 57.5%;
-    height: 65vh;
+  .mid-email {
+    top: 6%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .column-title {
-    font-size: 18px;
+  .other-container {
+    top: 20%;
+    bottom: 7%;
   }
-  .column-info p {
-    font-size: 15px;
+  .mid-email {
+    top: 0%;
   }
-  .column-container {
-    top: 55.5%;
-    height: 70vh;
+  .window-image {
+    width: 120%;
+  }
+  .decoration-image {
+    width: 120%;
+  }
+  .upholstery-image {
+    width: 120%;
+  }
+  .column-info {
+    top: 17%;
   }
 }
 @media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+  .mid-email {
+    display: none;
+  }
+  .bot-email {
+    display: block;
+    text-align: center;
+    top: 0%;
+  }
+  .bot-email p {
+    font-size: 11pt;
+  }
+  .bot-email span {
+    font-size: 11pt;
+  }
+  .other-container {
+    top: 10%;
+  }
   .column-container {
     display: block;
-    top: 45%;
   }
   .column {
     width: 50%;
-    height: 420px;
+    height: 480px;
   }
   .top {
     padding-top: 20px;
@@ -211,7 +290,7 @@ h1 {
     padding-bottom: 20px;
   }
   .column-info p {
-    font-size: 18px;
+    font-size: 11pt;
   }
   .mid {
     padding-top: 40px;
@@ -221,104 +300,65 @@ h1 {
   }
   .column-wrapper {
     width: 100%;
-    height: 55%;
+    height: 50%;
   }
   .window-image {
-    width: 60vw;
-    height: 200px;
-    top: 100px;
+    background-position: center;
   }
   .decoration-image {
-    width: 60vw;
-    height: 200px;
-    top: 100px;
     background-position: center;
   }
   .upholstery-image {
-    width: 60vw;
-    height: 200px;
-    top: 100px;
+    background-position: center;
   }
   .column-title {
-    font-size: 23px;
+    font-size: 16pt;
   }
   .title h1 {
-    font-size: 24px;
-  }
-  .title {
-    padding-top: 12.5px;
+    font-size: 26pt;
+    padding-top: 5px;
   }
 }
 @media only screen and (max-width: 768px) {
   .column-wrapper {
-    height: 67.5%;
+    height: 65%;
   }
 }
 @media only screen and (max-width: 736px) {
+  .other-container {
+    top: 15%;
+  }
   .column-wrapper {
-    height: 100%;
-    margin-bottom: 230px;
-  }
-  .column-container {
-    display: block;
-    top: 65%;
-  }
-  .column {
-    width: 50%;
-    height: 430px;
-  }
-  .window-image {
-    width: 60vw;
-  }
-  .decoration-image {
-    width: 60vw;
-    background-position: center;
-  }
-  .upholstery-image {
-    width: 60vw;
+    height: 190%;
   }
 }
 @media only screen and (max-width: 600px) {
   .column-wrapper {
-    height: 67.5%;
-    margin-bottom: 20px;
-  }
-  .column-container {
-    top: 47.5%;
+    height: 70%;
   }
 }
 @media only screen and (max-width: 420px) {
-  .column-wrapper {
-    height: 90%;
-    margin-bottom: 0px;
-  }
-  .column-container {
-    top: 57.5%;
+  .title h1 {
+    font-size: 17pt;
+    padding-top: 15px;
   }
   .column {
-    width: 80%;
+    width: 100%;
   }
-  .window-image {
-    width: 96vw;
-  }
-  .decoration-image {
-    width: 96vw;
-  }
-  .upholstery-image {
-    width: 96vw;
+  .column-wrapper {
+    height: 90%;
   }
 }
 @media only screen and (max-width: 320px) {
-  .column-wrapper {
-    height: 100%;
-  }
-  .column-container {
-    top: 65%;
-  }
-  .column {
-    height: 460px;
+  .other-container {
+    top: 15%;
   }
   .column-wrapper {
-    margin-bottom: 100px;
+    height: 135%;
+  }
+  .title h1 {
+    font-size: 17pt;
+    padding-top: 10px;
+    margin-top: -20px;
   }
 }

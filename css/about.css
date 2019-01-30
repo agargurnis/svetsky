@@ -79,8 +79,6 @@ span {
   position: absolute;
   top: 25%;
   bottom: 10%;
-  /* top: 270px; */
-  /* bottom: 100px; */
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -232,6 +230,10 @@ span {
   }
 }
 @media only screen and (max-width: 420px) {
+  .title h1 {
+    font-size: 22pt;
+    padding-top: 10px;
+  }
   .about-container {
     height: 105%;
   }
@@ -249,5 +251,8 @@ span {
 @media only screen and (max-width: 320px) {
   .about-container {
     height: 130%;
+  }
+  .l-container {
+    background-color: rgb(225, 222, 216);
   }
 }
