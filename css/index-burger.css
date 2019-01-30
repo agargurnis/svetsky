@@ -274,7 +274,7 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   .hamburger-container {
     left: 50px;
   }
@@ -299,5 +299,27 @@
   }
   p {
     font-size: 18px;
+  }
+} */
+@media only screen and (max-width: 1024px) {
+  .hamburger-container {
+    top: 25px;
+    left: 25px;
+  }
+  .menu ul {
+    margin-left: 60px;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hamburger-container {
+    display: none;
+  }
+  .insta-link {
+    display: none;
   }
 }

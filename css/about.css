@@ -222,6 +222,7 @@ span {
     width: 100%;
     top: 36vh;
     position: absolute;
+    background-color: rgb(225, 222, 216);
   }
   .r-container {
     width: 100%;
@@ -251,8 +252,5 @@ span {
 @media only screen and (max-width: 320px) {
   .about-container {
     height: 130%;
-  }
-  .l-container {
-    background-color: rgb(225, 222, 216);
   }
 }

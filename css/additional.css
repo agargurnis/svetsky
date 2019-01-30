@@ -346,7 +346,7 @@ h1 {
     width: 100%;
   }
   .column-wrapper {
-    height: 90%;
+    height: 105%;
   }
 }
 @media only screen and (max-width: 320px) {
