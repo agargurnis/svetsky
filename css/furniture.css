@@ -78,7 +78,7 @@ span {
   width: 60%;
   position: absolute;
   left: 0;
-  top: 15%;
+  top: 200px;
   bottom: 10%;
 }
 .r-container {
@@ -87,6 +87,7 @@ span {
   position: absolute;
   right: 0;
   top: 25%;
+  bottom: 15%;
 }
 .furniture-image {
   background-image: url('../assets/furniture-bg.jpg');
@@ -111,22 +112,13 @@ span {
     top: 17%;
     bottom: 5%;
   }
-  p {
-    font-size: 12pt;
-  }
-  span {
-    font-size: 22pt;
+  .r-container span {
+    font-size: 20pt;
   }
 }
 @media only screen and (max-width: 1680px) {
   .r-container {
     top: 25%;
-  }
-  p {
-    font-size: 11pt;
-  }
-  span {
-    font-size: 21pt;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -134,30 +126,22 @@ span {
     top: 20%;
     bottom: 5%;
   }
-  p {
-    font-size: 10pt;
-  }
-  span {
-    font-size: 20pt;
+  .r-container span {
+    font-size: 17pt;
   }
 }
 @media only screen and (max-width: 1440px) {
-  p {
-    font-size: 9pt;
+  .r-container {
+    top: 30%;
   }
-  span {
-    font-size: 19pt;
+  .text {
+    padding: 10% 37.5% 10% 10%;
+  }
+  .r-container span {
+    font-size: 15pt;
   }
 }
 @media only screen and (max-width: 1366px) {
-  p {
-    font-size: 8pt;
-  }
-  span {
-    font-size: 18pt;
-  }
-}
-@media only screen and (max-width: 1280px) {
   .l-container {
     top: 25%;
     bottom: 5%;
@@ -166,30 +150,21 @@ span {
     top: 30%;
     bottom: 10%;
   }
-  p {
-    font-size: 7pt;
-  }
-  span {
-    font-size: 17pt;
-  }
 }
 @media only screen and (max-width: 1024px) {
   .l-container {
     top: 20%;
-    bottom: 20%;
+    bottom: 5%;
   }
   .r-container {
     top: 23%;
-    bottom: 23%;
-  }
-  .furniture-container p {
-    font-size: 6pt;
-  }
-  .furniture-container span {
-    font-size: 16pt;
+    bottom: 7.5%;
   }
   .text {
-    padding: 7.5% 35% 7.5% 10%;
+    padding: 5% 35% 5% 10%;
+  }
+  .r-container span {
+    font-size: 12pt;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -216,6 +191,9 @@ span {
   .text {
     background-color: rgb(225, 222, 216);
     padding: 7.5%;
+  }
+  .r-container span {
+    font-size: 21pt;
   }
 }
 @media only screen and (max-width: 736px) {
@@ -244,6 +222,9 @@ span {
   }
 }
 @media only screen and (max-width: 420px) {
+  .r-container span {
+    font-size: 12pt;
+  }
   .title h1 {
     font-size: 19pt;
     padding-top: 15px;

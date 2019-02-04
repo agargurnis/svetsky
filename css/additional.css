@@ -77,8 +77,8 @@ h1 {
   position: absolute;
   top: 23%;
   bottom: 23%;
-  left: 10%;
-  right: 10%;
+  left: 5%;
+  right: 5%;
 }
 .column-container {
   display: flex;
@@ -88,7 +88,7 @@ h1 {
 }
 .column-wrapper {
   height: 100%;
-  width: 33%;
+  width: 33.3%;
 }
 .column {
   margin: 0 auto;
@@ -166,6 +166,11 @@ h1 {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 2150px) {
+  .column {
+    width: 375px;
+  }
+}
 @media only screen and (max-width: 1920px) {
   .column-info {
     top: 20%;
@@ -225,8 +230,8 @@ h1 {
   .other-container {
     top: 27%;
     bottom: 10%;
-    left: 5%;
-    right: 5%;
+    left: 0%;
+    right: 0%;
   }
   .mid-email {
     top: 6%;

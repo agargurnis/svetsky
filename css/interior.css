@@ -94,6 +94,7 @@
 body {
   line-height: 1.4;
   background-color: rgb(209, 203, 188);
+  overflow: hidden;
 }
 a {
   color: #1c3b51;
@@ -122,7 +123,7 @@ span {
   animation: fadeIn 1s ease-in-out;
   position: absolute;
   display: flex;
-  top: 25%;
+  top: 240px;
   bottom: 0;
   left: 10%;
   right: 10%;
@@ -143,70 +144,44 @@ span {
   animation: carousel 40s infinite;
 }
 .text {
-  padding: 15%;
+  padding: 15% 15% 0% 15%;
   word-break: normal;
   hyphens: auto;
 }
-@media only screen and (max-width: 1920px) {
-  p {
-    font-size: 13pt;
-  }
-  span {
-    font-size: 23pt;
-  }
-}
-@media only screen and (max-width: 1680px) {
-  p {
-    font-size: 12pt;
-  }
-  span {
-    font-size: 22pt;
-  }
-}
 @media only screen and (max-width: 1600px) {
-  p {
-    font-size: 11pt;
-  }
-  span {
-    font-size: 21pt;
-  }
   .title h1 {
     font-size: 24pt;
   }
-}
-@media only screen and (max-width: 1440px) {
-  p {
-    font-size: 10pt;
-  }
-  span {
+  .r-container span {
     font-size: 21pt;
   }
 }
 @media only screen and (max-width: 1366px) {
-  p {
-    font-size: 9pt;
+  .r-container span {
+    font-size: 17pt;
   }
-  span {
-    font-size: 20pt;
+  .interior-container {
+    top: 25%;
   }
   .text {
-    padding: 12.5%;
+    padding: 12.5% 12.5% 0% 12.5%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .interior-container p {
-    font-size: 8pt;
-  }
-  .interior-container span {
-    font-size: 19pt;
-  }
   .interior-container {
     top: 15%;
     left: 5%;
     right: 5%;
   }
+  .r-container span {
+    font-size: 15pt;
+  }
 }
 @media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
   .interior-container {
     display: block;
     top: 10%;
@@ -221,6 +196,9 @@ span {
     height: 40vh;
     position: absolute;
   }
+  .r-container span {
+    font-size: 25pt;
+  }
 }
 @media only screen and (max-width: 736px) {
   .l-container {
@@ -230,7 +208,7 @@ span {
     top: 60vh;
   }
   .text {
-    padding: 5%;
+    padding: 5% 5% 0% 5%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -241,10 +219,13 @@ span {
     top: 40vh;
   }
   .text {
-    padding: 12.5%;
+    padding: 12.5% 12.5% 0% 12.5%;
   }
 }
 @media only screen and (max-width: 420px) {
+  .r-container span {
+    font-size: 15pt;
+  }
   .title h1 {
     font-size: 19pt;
     padding-top: 15px;

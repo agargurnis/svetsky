@@ -116,6 +116,12 @@
     background-image: url('../assets/floor5.png');
   }
 }
+.l-top-container-800 {
+  display: none;
+}
+.l-bot-container-800 {
+  display: none;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -230,7 +236,7 @@ span {
 .r-top-container {
   height: 85vh;
   width: 100%;
-  padding-top: 250px;
+  padding-top: 300px;
 }
 .r-bot-container {
   height: 15vh;
@@ -264,20 +270,14 @@ span {
   display: none;
 }
 @media only screen and (max-width: 1920px) {
-  .r-container p {
+  .r-bot-container p {
     font-size: 9pt;
   }
-  .r-container h1 {
+  .r-bot-container h1 {
     font-size: 9pt;
-  }
-  .l-container p {
-    font-size: 11pt;
-  }
-  .l-container h1 {
-    font-size: 15pt;
   }
   span {
-    font-size: 21pt;
+    font-size: 18pt;
   }
   .floor-image {
     top: 32%;
@@ -285,24 +285,27 @@ span {
   }
 }
 @media only screen and (max-width: 1680px) {
+  .r-bot-container p {
+    font-size: 8pt;
+  }
+  .r-bot-container h1 {
+    font-size: 8pt;
+  }
+  .r-top-container {
+    padding-top: 250px;
+  }
   .r-column {
     width: 30%;
     padding: 0 20px 0 30px;
   }
-  .r-container p {
-    font-size: 8pt;
+  .r-bot-l {
+    right: 24%;
   }
-  .r-container h1 {
-    font-size: 8pt;
-  }
-  .l-container p {
-    font-size: 10pt;
-  }
-  .l-container h1 {
-    font-size: 14pt;
+  .r-bot-r {
+    right: 5%;
   }
   span {
-    font-size: 20pt;
+    font-size: 16pt;
   }
   .floor-image {
     top: 30%;
@@ -310,23 +313,24 @@ span {
   }
 }
 @media only screen and (max-width: 1600px) {
-  .r-container p {
+  .r-bot-container p {
     font-size: 7pt;
   }
-  .r-container h1 {
+  .r-bot-container h1 {
     font-size: 7pt;
     margin-bottom: 10pt;
   }
+  .r-container h1 {
+    margin-bottom: 10pt;
+  }
   .l-container p {
-    font-size: 9pt;
     margin-bottom: 15pt;
   }
   .l-container h1 {
-    font-size: 13pt;
     margin-bottom: 15pt;
   }
   span {
-    font-size: 19pt;
+    font-size: 14pt;
   }
   .floor-image {
     top: 32%;
@@ -337,23 +341,24 @@ span {
   }
 }
 @media only screen and (max-width: 1440px) {
-  .r-container p {
+  .r-bot-container p {
     font-size: 7pt;
   }
-  .r-container h1 {
+  .r-bot-container h1 {
     font-size: 7pt;
     margin-bottom: 5pt;
   }
+  .r-container h1 {
+    margin-bottom: 5pt;
+  }
   .l-container p {
-    font-size: 9pt;
     margin-bottom: 10pt;
   }
   .l-container h1 {
-    font-size: 12pt;
     margin-bottom: 10pt;
   }
   span {
-    font-size: 19pt;
+    font-size: 12pt;
   }
   .floor-image {
     top: 29%;
@@ -362,16 +367,8 @@ span {
   }
 }
 @media only screen and (max-width: 1366px) {
-  .l-container p {
-    font-size: 9pt;
-    margin-bottom: 10pt;
-  }
-  .l-container h1 {
-    font-size: 11pt;
-    margin-bottom: 10pt;
-  }
   span {
-    font-size: 16pt;
+    font-size: 11pt;
   }
   .floor-image {
     top: 31%;
@@ -392,22 +389,19 @@ span {
   .l-top-container {
     left: 12%;
   }
+  .l-top-container {
+    top: 23%;
+  }
+  .l-bot-container {
+    top: 33%;
+  }
 }
 @media only screen and (max-width: 1280px) {
-  .r-container p {
+  .r-bot-container p {
     font-size: 6pt;
   }
-  .r-container h1 {
+  .r-bot-container h1 {
     font-size: 6pt;
-  }
-  .l-container p {
-    font-size: 8pt;
-  }
-  .l-container h1 {
-    font-size: 10pt;
-  }
-  span {
-    font-size: 17pt;
   }
   .r-top-container {
     padding-top: 180px;
@@ -420,21 +414,24 @@ span {
   .l-bot-container {
     left: 12%;
     right: 45%;
-    top: 33%;
+    top: 35%;
   }
   .l-top-container {
-    top: 23%;
+    top: 25%;
+  }
+  .r-bot-container {
+    padding-top: 13%;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .l-container p {
-    margin-bottom: 5pt;
+  .r-bot-container p {
+    font-size: 5pt;
   }
-  .l-container h1 {
-    margin-bottom: 5pt;
+  .r-bot-container h1 {
+    font-size: 5pt;
   }
   .r-top-container {
-    padding-top: 140px;
+    padding-top: 100px;
   }
   .floor-image {
     top: 27%;
@@ -458,6 +455,27 @@ span {
   }
 }
 @media only screen and (max-width: 800px) {
+  span {
+    font-size: 18pt;
+  }
+  .l-container p {
+    margin-bottom: 10pt;
+  }
+  .l-container h1 {
+    margin-bottom: 10pt;
+  }
+  .l-top-container-800 {
+    display: block;
+  }
+  .l-bot-container-800 {
+    display: block;
+  }
+  .l-top-container {
+    display: none;
+  }
+  .l-bot-container {
+    display: none;
+  }
   body {
     overflow-x: hidden;
     overflow-y: visible;
@@ -475,18 +493,18 @@ span {
   .r-container {
     position: absolute;
     width: 100%;
-    top: 750px;
+    top: 900px;
   }
   .r-column {
     width: 30%;
     padding: 0 10px 0 80px;
   }
-  .l-top-container {
+  .l-top-container-800 {
     position: absolute;
     left: 0;
     width: 100%;
   }
-  .l-bot-container {
+  .l-bot-container-800 {
     position: absolute;
     width: 100%;
     left: 0;
@@ -515,12 +533,19 @@ span {
   .floor-image {
     position: absolute;
     width: 75%;
-    margin-top: -60px;
+    margin-top: -40px;
     height: 220px;
     left: 62%;
   }
   .r-bot-container {
-    height: 140px;
+    height: 300px;
+    padding-top: 200px;
+  }
+  .r-bot-container p {
+    font-size: 8pt;
+  }
+  .r-bot-container h1 {
+    font-size: 8pt;
   }
   .r-column-container {
     display: flex;
@@ -533,11 +558,11 @@ span {
   .r-bot-r {
     text-align: right;
     position: absolute;
-    right: 15%;
+    right: 13%;
   }
   .r-bot-outside {
     position: absolute;
-    right: 72%;
+    right: 70%;
   }
   .not-mobile {
     display: none;
@@ -549,6 +574,12 @@ span {
   }
 }
 @media only screen and (max-width: 600px) {
+  .l-container {
+    top: 10%;
+  }
+  .r-container {
+    top: 800px;
+  }
   .floor-image {
     left: 52%;
   }
@@ -557,15 +588,19 @@ span {
     padding: 0 10px 0 50px;
   }
   .r-bot-l {
-    position: absolute;
     right: 44%;
   }
+  .r-bot-r {
+    right: 10%;
+  }
   .r-bot-outside {
-    position: absolute;
-    right: 77%;
+    right: 73%;
   }
 }
 @media only screen and (max-width: 420px) {
+  span {
+    font-size: 11pt;
+  }
   .title h1 {
     font-size: 19pt;
     padding-top: 15px;
@@ -576,6 +611,9 @@ span {
   .r-column {
     width: 33%;
     padding: 0 10px 0 30px;
+  }
+  .r-container {
+    top: 750px;
   }
   .floor-image {
     margin-top: -50px;
@@ -588,17 +626,23 @@ span {
     background-color: rgb(225, 222, 216);
   }
   .r-bot-l {
-    position: absolute;
     right: 42%;
   }
   .r-bot-r {
-    text-align: right;
-    position: absolute;
     right: 7%;
   }
   .r-bot-outside {
-    position: absolute;
     right: 73%;
+  }
+  .r-bot-container {
+    height: 100px;
+    padding-top: 30px;
+  }
+  .r-bot-container p {
+    font-size: 6pt;
+  }
+  .r-bot-container h1 {
+    font-size: 6pt;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -612,7 +656,7 @@ span {
     font-size: 4pt;
   }
   .r-top-container {
-    height: 500px;
+    height: 450px;
   }
   .r-bot-container {
     height: 70px;

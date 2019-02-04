@@ -74,12 +74,12 @@ h1 {
   padding-top: 5px;
 }
 .description {
-  background-color: rgba(225, 222, 216, 0.75);
   position: absolute;
   top: 30%;
-  left: 10%;
+  left: 20%;
   width: 22vw;
   padding: 2%;
+  font-weight: 450;
 }
 .chap {
   font-family: 'Chap', Arial, sans-serif;
@@ -101,6 +101,11 @@ h1 {
   left: 15%;
   right: 15%;
   top: 20%;
+}
+@media only screen and (max-width: 1920px) {
+  .description {
+    width: 27vw;
+  }
 }
 @media only screen and (max-width: 1600px) {
   .description {
@@ -125,7 +130,9 @@ h1 {
     top: 20%;
   }
   .description {
-    width: 40vw;
+    top: 25%;
+    left: 18%;
+    width: 35vw;
   }
 }
 @media only screen and (max-width: 800px) {
