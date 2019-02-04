@@ -115,7 +115,7 @@ span {
     width: 60%;
   }
   .l-container span {
-    font-size: 23pt;
+    font-size: 20pt;
   }
 }
 @media only screen and (max-width: 1600px) {
@@ -129,7 +129,7 @@ span {
     padding: 5% 10% 0% 12.5%;
   }
   .l-container span {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -146,7 +146,7 @@ span {
     bottom: 5%;
   }
   .l-container span {
-    font-size: 15pt;
+    font-size: 14pt;
   }
 }
 @media only screen and (max-width: 1024px) {
