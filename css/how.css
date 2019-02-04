@@ -236,7 +236,7 @@ span {
 .r-top-container {
   height: 85vh;
   width: 100%;
-  padding-top: 300px;
+  padding-top: 35%;
 }
 .r-bot-container {
   height: 15vh;
@@ -292,7 +292,7 @@ span {
     font-size: 8pt;
   }
   .r-top-container {
-    padding-top: 250px;
+    padding-top: 220px;
   }
   .r-column {
     width: 30%;
