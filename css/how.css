@@ -122,6 +122,18 @@
 .l-bot-container-800 {
   display: none;
 }
+.arrow-link {
+  font-size: 45px;
+  position: absolute;
+  left: 115px;
+  top: 46%;
+  z-index: 1;
+  transition: 0.3s;
+}
+.arrow-link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -236,7 +248,8 @@ span {
 .r-top-container {
   height: 85vh;
   width: 100%;
-  padding-top: 35%;
+  position: relative;
+  top: 21%;
 }
 .r-bot-container {
   height: 15vh;
@@ -291,9 +304,6 @@ span {
   .r-bot-container h1 {
     font-size: 8pt;
   }
-  .r-top-container {
-    padding-top: 220px;
-  }
   .r-column {
     width: 30%;
     padding: 0 20px 0 30px;
@@ -336,9 +346,6 @@ span {
     top: 32%;
     height: 260px;
   }
-  .r-top-container {
-    padding-top: 200px;
-  }
 }
 @media only screen and (max-width: 1440px) {
   .r-bot-container p {
@@ -380,7 +387,7 @@ span {
     padding: 0 10px 0 20px;
   }
   .r-top-container {
-    padding-top: 170px;
+    top: 23.25%;
   }
   .l-bot-container {
     left: 12%;
@@ -388,8 +395,6 @@ span {
   }
   .l-top-container {
     left: 12%;
-  }
-  .l-top-container {
     top: 23%;
   }
   .l-bot-container {
@@ -404,7 +409,7 @@ span {
     font-size: 6pt;
   }
   .r-top-container {
-    padding-top: 180px;
+    top: 25.25%;
   }
   .floor-image {
     top: 33%;
@@ -431,7 +436,7 @@ span {
     font-size: 5pt;
   }
   .r-top-container {
-    padding-top: 100px;
+    top: 15.5%;
   }
   .floor-image {
     top: 27%;
@@ -453,8 +458,14 @@ span {
   .r-bot-container {
     padding-top: 50px;
   }
+  .arrow-link {
+    left: 40px;
+  }
 }
 @media only screen and (max-width: 800px) {
+  .arrow-link {
+    display: none;
+  }
   span {
     font-size: 18pt;
   }
